@@ -1,18 +1,18 @@
 @font-face {
   font-family: AeonikWeb;
-  src: url(/assets/fonts/aeonik-regular.woff) format("woff");
+  src: url(../fonts/aeonik-regular.woff) format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: AeonikWeb;
-  src: url(/assets/fonts/aeonik-medium.woff) format("woff");
+  src: url(../fonts/aeonik-medium.woff) format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: AeonikWeb;
-  src: url(/assets/fonts/aeonik-bold.woff) format("woff");
+  src: url(../fonts/aeonik-bold.woff) format("woff");
   font-weight: 600;
   font-style: normal;
 }
