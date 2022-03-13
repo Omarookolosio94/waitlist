@@ -79,7 +79,7 @@ p {
 /* set up the body */
 body {
   font-family: var(--ff-aeonik-regular);
-  font-size: var(--fs-400);
+  font-size: 14px;
   color: hsl(var(--clr-dark));
   background-color: hsl(var(--clr-white));
   line-height: 1.5;
@@ -248,9 +248,176 @@ select {
   line-height: 1.1;
 }
 
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
+
+.mx-2 {
+  margin: 0 2rem;
+}
+
+.mx-3 {
+  margin: 0 3rem;
+}
+
+.mx-4 {
+  margin: 0 4rem;
+}
+
+.mx-5 {
+  margin: 0 5rem;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.mt-4 {
+  margin-top: 4rem;
+}
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+.text-md {
+  font-size: var(--md);
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-sm {
+  font-size: var(--sm);
+}
+.text-md {
+  font-size: var(--md);
+}
+.text-nor {
+  font-size: var(--nor);
+}
+.text-muted {
+  color: var(--disabled-color);
+}
+.text-lg {
+  font-size: var(--lg);
+}
+
+.text-xd {
+  font-size: var(--xd);
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.btn {
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 100px;
+  border-radius: 0.4rem;
+  background-color: hsl(var(--clr-dark));
+  color: hsl(var(--clr-white));
+}
+
+.form-input {
+  outline: none;
+  border: none;
+  height: 40px;
+  padding: 0px 8px;
+  border-radius: 0.4rem;
+}
+
 /* ------------------- */
 /*    Nav Bar            */
 /* ------------------- */
+
+section#navigation {
+  position: fixed;
+  width: 100%;
+}
 
 .navbar,
 .navbar .main {
@@ -261,10 +428,10 @@ select {
 
 .navbar {
   padding: 1.5rem 0;
+  width: 100%;
 }
 
 .navbar .main {
-  border: 1px solid red;
   min-width: 300px;
 }
 
@@ -285,7 +452,31 @@ select {
 
 .nav-link {
   text-decoration: none;
-  color: hsl(var(--clr-dark));
+  color: hsl(var(--clr-white));
+  transition: color 0.6s cubic-bezier(0.32, 0.94, 0.6, 1);
+  position: relative;
+}
+
+.nav-link:hover {
+  color: hsl(var(--clr-white));
+}
+
+.nav-link:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.1rem;
+  background-color: currentColor;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.6s cubic-bezier(0.32, 0.94, 0.6, 1);
+}
+
+.nav-link:hover:before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 /* ------------------- */
@@ -295,4 +486,44 @@ select {
 section#landing {
   background: hsl(var(--clr-primary-hsl));
   height: 100vh;
+}
+
+section#landing .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .content-body {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  height: 100vh;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.content .content-body img {
+  border: 1px solid red;
+  width: 500px;
+}
+
+.content-text {
+  text-align: center;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+/* ------------------- */
+/*     Value     */
+/* ------------------- */
+.segment {
+  min-height: 100vh;
+  background-color: hsl(var(--clr-dark));
+  color: hsl(var(--clr-white));
 }
