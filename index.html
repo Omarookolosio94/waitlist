@@ -12,15 +12,14 @@
       <div class="container">
         <nav class="navbar">
           <div class="main">
-            <div class="logo">Apicommerce</div>
+            <div class="logo text-bold text-white">Apicommerce</div>
             <ul class="menu">
               <li><a href="#value" class="nav-link">Value</a></li>
-              <li><a href="#facts" class="nav-link">Facts</a></li>
-              <li><a href="#team" class="nav-link">Team</a></li>
+              <li><a href="#faqs" class="nav-link">FAQs</a></li>
             </ul>
           </div>
 
-          <button class="btn nav-btn">Join waitlist</button>
+          <button class="btn nav-btn" id="waitlist-btn">Join waitlist</button>
         </nav>
       </div>
     </section>
@@ -66,31 +65,33 @@
             <li class="value-item">
               <h3>Increase your reach</h3>
               <p>
-                Leveraging on the power of internet to reach out to potential
-                customers. Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Ad tempora nam fuga iusto possimus id doloribus fugiat.
-                Minus, expedita ipsam?
+                2.14 billion people are shopping online. Leveraging on the power
+                of internet to reach out to potential customers. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Ad tempora nam fuga
+                iusto possimus id doloribus fugiat. Minus, expedita ipsam?
               </p>
             </li>
             <li class="value-item">
               <h3>Boost productivity</h3>
               <p>
-                Monitor your business platform from any device, anywhere and at
-                anytime. Rendering services to customers is just a click away.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Voluptate accusantium sed quo nemo non repudiandae commodi quod
-                voluptatem omnis asperiores!
+                40% of all online purchases made during the holiday season are
+                done on smartphones. Monitor your business platform from any
+                device, anywhere and at anytime. Rendering services to customers
+                is just a click away. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Voluptate accusantium sed quo nemo non
+                repudiandae commodi quod voluptatem omnis asperiores!
               </p>
             </li>
             <li class="value-item">
               <h3>Maximize Revenue</h3>
               <p>
-                Automation systems which help in notification, security and
-                monitoring helps save resource for your business. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Voluptates quod
-                harum nesciunt quisquam saepe illum ducimus mollitia
-                perspiciatis? Delectus consectetur sequi provident odio
-                necessitatibus, maxime illo error id qui quae?
+                By 2040, 95% of purchase will happen online. Automation systems
+                which help in notification, security and monitoring helps save
+                resource for your business. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptates quod harum nesciunt
+                quisquam saepe illum ducimus mollitia perspiciatis? Delectus
+                consectetur sequi provident odio necessitatibus, maxime illo
+                error id qui quae?
               </p>
             </li>
           </ul>
@@ -98,49 +99,73 @@
       </div>
     </section>
 
-    <section class="segment" id="facts">
+    <section class="segment" id="faqs">
       <div class="container">
-        <h1 class="header text-center mb-4">Facts</h1>
-        <div class="stats-box">
-          <div class="stats-item">
-            <div class="stat">
-              <p>95%</p>
-            </div>
-            <p>By 2040, 95% of purchases will happen online</p>
+        <h1 class="header text-center mb-4">FAQs</h1>
+
+        <div class="main-faq">
+          <button class="accordion">What is BasketApi?</button>
+          <div class="panel mb-2">
+            <p>Lorem ipsum...</p>
           </div>
 
-          <div class="stats-item">
-            <div class="stat">
-              <p>2.14b</p>
-            </div>
-            <p>2.14 billion people are shopping online.</p>
+          <button class="accordion">What Do I need to Register?</button>
+          <div class="panel mb-2">
+            <p>Lorem ipsum...</p>
           </div>
 
-          <div class="stats-item">
-            <div class="stat">
-              <p>40%</p>
-            </div>
-            <p>
-              40% of all online purchases made during the holiday season are
-              done on smartphones.
-            </p>
+          <button class="accordion">How much does it cost?</button>
+          <div class="panel mb-2">
+            <p>Lorem ipsum...</p>
+          </div>
+
+          <button class="accordion">Which services do I have access to?</button>
+          <div class="panel mb-2">
+            <p>Lorem ipsum...</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="segment" id="team">
-      <div class="container">
-        <h1>Meet our Team</h1>
-      </div>
-    </section>
-
     <section class="segment" id="news_letter">
       <div class="container">
-        <h1>Keep in touch</h1>
+        <div class="news-box">
+          <h1 class="header">Be The First To Know</h1>
+          <small>We are committed to protecting your data</small>
+          <div class="cta-form mt-2">
+            <form action="">
+              <input type="text" placeholder="Your Email" class="form-input" />
+              <button class="btn">Stay Updated</button> <br />
+            </form>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="footer"><div class="container">Footer</div></section>
+    <section id="footer">
+      <div class="container">
+        <div class="copyright text-center">
+          &copy;<small class="text-md"> Apicommerce </small
+          ><span class="footer-year text-md"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Modal -->
+    <div id="waitlist-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="header">Be The First To Know</h1>
+        <small>We are committed to protecting your data</small>
+        <div class="cta-form mt-2">
+          <form action="">
+            <input type="text" placeholder="Your Email" class="form-input" />
+            <button class="btn">Join Waitlist</button> <br />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
