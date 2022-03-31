@@ -219,6 +219,15 @@ select {
   letter-spacing: 2.35px;
 }
 
+a{
+  text-decoration: none;
+  color: hsl(var(--clr-dark));
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -694,6 +703,10 @@ section#news_letter .news-box {
 
 section#footer {
   padding: 2rem 0;
+  color: hsl(var(--clr-white));
+}
+
+.footer-link{
   color: hsl(var(--clr-white));
 }
 
